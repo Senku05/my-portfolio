@@ -31,11 +31,7 @@
         <ul class="navbar-nav">
           <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
-          <li class="nav-item"><a class="nav-link" href="#faq">faq</a></li>
           <li class="nav-item"><a class="nav-link" href="#portfolio">portfolio</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">contact</a>
-          </li>
         </ul>
         <a class="getInTouch" href="mailto:emanuelebonetti26@gmail.com">
           <button type="button" class="rounded-pill btn-rounded">Scrivimi
@@ -45,6 +41,22 @@
       </div>
     </div>
   </nav>
+
+  <script>
+    // Ottieni tutti gli elementi del menu
+    const menuItems = document.querySelectorAll('.navbar-nav .nav-link');
+  
+    // Aggiungi l'evento di click a ciascun elemento del menu
+    menuItems.forEach(item => {
+      item.addEventListener('click', function() {
+        // Rimuovi la classe "active" da tutti gli elementi del menu
+        menuItems.forEach(item => item.classList.remove('active'));
+  
+        // Aggiungi la classe "active" all'elemento cliccato
+        this.classList.add('active');
+      });
+    });
+  </script>
 
 <!-- /////////////////////////////////////////////////////////////////////////////////////////////////
                             START SECTION 2 - THE INTRO SECTION  
@@ -406,7 +418,7 @@
 </footer>
 
 <!-- BACK TO TOP BUTTON  -->
-<a href="#" class="shadow btn-primary rounded-circle back-to-top">
+<a href="#" class="shadow btn-danger rounded-circle back-to-top">
   <i class="fas fa-chevron-up"></i>
 </a>
 
