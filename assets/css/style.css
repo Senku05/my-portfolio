@@ -10761,13 +10761,14 @@ textarea.form-control-lg {
   padding: 0.8375rem 4.375rem 0.8375rem 1.25rem;
   font-weight: 700;
   margin: 0;
-  border: 0.1rem solid rgba(255, 255, 255, 0.6);
-  background-color: #fff;
+  border: 0 solid black;
+  background-color: red;
+  color: white;
   display: block;
 }
 .btn-rounded span {
   position: absolute;
-  background-color: #9926f0;
+  background-color: #b50000;
   width: 2.5rem;
   height: 2.5rem;
   top: 50%;
@@ -10781,7 +10782,7 @@ textarea.form-control-lg {
   line-height: 2.5rem;
 }
 .btn-rounded:hover {
-  background: linear-gradient(to right, rgba(153, 38, 240, 0.95), rgba(209, 34, 227, 0.95));
+  background: linear-gradient(to right, red, orange);
   color: #fff;
 }
 .btn-rounded:hover span {
@@ -10866,7 +10867,7 @@ textarea.form-control-lg {
 }
 
 .menu {
-  background: linear-gradient(to right, rgba(153, 38, 240, 0.95), rgba(209, 34, 227, 0.95));
+  background: black;
 }
 .menu li {
   padding: 0 0.7rem;
@@ -10882,7 +10883,7 @@ textarea.form-control-lg {
 }
 
 .intro-section {
-  background: linear-gradient(to right, rgba(153, 38, 240, 0.95), rgba(209, 34, 227, 0.95));
+  background: linear-gradient(to right, #cf0404, #a30202);
   padding: 10rem 0 0 0;
   width: 100%;
   height: 100%;
